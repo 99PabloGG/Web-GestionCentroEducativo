@@ -1,0 +1,78 @@
+#capaVentana {
+	visibility:hidden;
+		position:fixed;
+		position:top;
+		padding:0px;
+		right:0%;
+		top:40%; 
+		z-index:2;
+	}
+	#capaFondo1 {
+	visibility:hidden;
+		position:fixed;
+		padding:0px;
+		width:100%;
+		height:100%;
+		top:0;
+		left:0;
+		z-index:1;
+		background-color: rgba(1, 1, 1, 0.5);
+	}  
+  footer {
+	  background-color: #224abe;
+	  width: 100%;
+	  align-content: center;
+	  position: absolute;
+  }
+
+  nav.navbar.navbar-expand.navbar-light.bg-white.topbar.mb-4.static-top.shadow {
+	margin-bottom: 0 !important;
+  }
+
+  .text-left>a>i{
+	font-size: 35px;
+  }
+
+  li.nav-item {
+	list-style-type: none;
+	width: max-content;
+	text-align: center;
+    font-size: 10px;
+  }
+
+  nav.navbar.navbar-expand.navbar-light.bg-white.topbar.mb-4.static-top.shadow {
+    display: flex;
+    flex-flow: row;
+}
+
+.sidebar-brand-text.mx-3 {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+a.sidebar-brand.d-flex.align-items-center.justify-content-center:hover {
+	text-decoration: none;
+}
+
+article {
+	margin-top: 5.375rem;
+	height: calc(100vh - 6.5rem);
+	overflow-x: hidden;
+}
+
+nav.navbar.navbar-expand.navbar-light.bg-white.topbar.mb-4.static-top.shadow {
+	position: fixed;
+	z-index: 1;
+    width: 100%;
+}
+
+.carousel-caption.d-none.d-md-block {
+	box-shadow: 0 0 20px 20px #000000c7;
+    background-color: rgba(0, 0, 0, 0.76);
+}
+
+.lang {
+	background: transparent;
+    border: none;
+}

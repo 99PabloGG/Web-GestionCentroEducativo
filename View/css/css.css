@@ -1,0 +1,239 @@
+    /*//Hecho por: 70ky5e
+    //1-11-2019*/
+/*-----------Body-----------*/
+    body, html {
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+	background-color: #f5f0e3;
+
+}
+a{
+	background-color: #f0134d;
+	border-radius: 5px;
+	padding: 4px;
+	color: #f5f0e3;
+	text-decoration: none;
+}
+/*-----------CABECERA-----------*/
+header{
+	position: fixed;
+	width: 100%;
+	padding-top: 1px;
+	min-height: 10%;
+	background: #f0134d;
+	text-align: center;
+}
+.pag{
+	min-width: 85%;
+	float: left;
+	height: auto;
+}
+
+#idiomas{
+	background-color: #f5f0e3;
+	border-style: dotted;
+	position: absolute;
+	top: 2%; right: 2%;
+  	border-radius: 5px;
+  }
+#username{
+	background-color: #f5f0e3;
+	border-style: dotted;
+	position: absolute;
+	top: 2%; left: 2%;
+	padding-bottom: 3px;
+	border-radius: 5px;
+}
+#username a{
+	background-color: #f5f0e3;
+	color: black;
+}
+
+#menu nav ul{
+	margin:0;
+	padding: 0;
+	background-color: #f0134d;
+  	text-align: center;
+}
+#menu nav ul li {
+	display: inline-block;
+}
+#menu nav ul li a {
+	overflow: hidden !important;
+	font-weight: bold;
+	font-family: Arial;
+	font-size: 12px;
+	text-decoration: none;
+	float: left;
+	padding: 10px;
+	background-color: #ff6f5e;
+	color: #f5f0e3;
+	border-radius: 5px;
+	border-style: none;
+}
+#menu nav ul li a:hover {
+	color : #ff6f5e;
+	background-color: #f5f0e3;
+	margin-top: -3;
+	padding-bottom: 12px;
+}
+#menu nav ul li a.active {
+	color : #ff6f5e;
+	background-color: #f5f0e3;
+	text-decoration: underline;
+	border-left: 5px solid #40bfc1;
+	margin-top: -10;
+	padding-bottom: 15px;
+}
+/*-----------CONTENIDO-----------*/
+.formulario{
+	background-color: #ff6f5e;
+	text-align: left;
+	font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+	border-style: solid;
+	border-width: 5px;
+	border-color: #4E4E4E;
+	border-radius: 20px;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	padding-right: 5%;
+	padding-left: 5%;
+	margin-bottom: 1%;
+	float: center;
+	margin-right: 30%;
+	margin-left: 30%;
+	color: white;
+}
+#idiomabtn{
+	background-color: #f5f0e3; 
+	border-style: none;	
+}
+#actionbtn{
+	background-color: #ff6f5e;
+	border-style: none;
+	padding-left: 45%;
+}
+#icon{
+	width: 25px;
+	height: 25px;
+}
+#btn{
+	padding-top: 15px;
+}
+input[type=text],input[type=password],input[type=date],input[type=file], select{
+	width: 100%;
+}
+
+article{
+	float: center;
+	text-align: center;
+	padding-top: 10%;
+	padding-bottom: 5%;
+	padding-right: 5%;
+	padding-left: 5%;
+	margin-bottom: 4%;
+	margin-right: 20%;
+	margin-left: 20%;
+}
+#mensaje{
+	text-align: justify;
+}
+/*-----------Tablas-----------*/
+table {
+  border-collapse: collapse;
+  width: 95%;
+  margin-left: 2.5%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){
+	border-style: solid;
+	border-width: 2px;
+ 	background-color: #F5F0E3;
+
+}
+tr:nth-child(odd){
+	border-color: black;
+	border-style: solid;
+	border-width: 2px;
+	background-color: #808080;
+	color: #f5f0e3;
+}
+
+th{
+  background-color: #ff6f5e;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #808080;
+  color: white;
+}
+/*-----------PIE DE PÁGINA-----------*/
+footer {
+	color: #f5f0e3;
+ 	position: fixed;
+  	left: 0;
+  	bottom: 0;
+  	width: 100%;
+  	text-align: center;
+  	display: block;
+	min-height: 5%;
+	background-color: #40bfc1;
+}
+
+/*-----------CSS MODAL-----------*/
+
+#modal {
+	width:100%; /*Toma el 100% del ancho de la página*/
+	height:100%; /*Toma el 100% del alto de la página*/
+	position:fixed; /*Con este código hacemos que el contenedor se mantenga en la pantalla y para que tome las dimensiones del body y no de la entrada*/
+	background-color: rgba(1, 1, 1, 0.5); /*Color de fondo, incluye opacidad del 90%*/
+	top:0; /*Position superior*/
+	left:0; /*Posición lateral*/
+	z-index:10; /*Evitamos que algún elemento del blog sobreponga la ventana modal*/
+}
+
+#contenido-interno { 
+	background: #40bfc1;
+	z-index:10;
+	position:fixed;
+	top:20%;
+	left:38%;
+	width: 500px;
+	height: 90px;
+	border-style: solid;
+	border-width: 5px;
+	border-color: #4E4E4E;
+	border-radius: 20px;
+}
+
+#aviso{
+	position:absolute;
+	margin-top: 5px;
+	margin-left: 20px;
+}
+
+#aviso img{
+	width: 80px;
+}
+
+#mensajeError{
+	font-size: 15px;
+	font-weight: bold;
+	position: absolute;
+	margin-left: 178px;
+	margin-top: 30px;
+	color: #d50000;
+	font-family: "Open Sans";
+}
+
+#cerrar {
+	position:absolute;
+    top:5px;
+    right:5px;
+    padding:2px;
+}
